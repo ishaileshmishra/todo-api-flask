@@ -25,6 +25,7 @@ def get_tasks():
     return jsonify({'tasks': tasks})
 
 
+# this is to show error in valid formate
 @app.errorhandler(404)
 def not_found(error):
     return make_response(jsonify({'error': 'Not found'}), 404)
