@@ -28,7 +28,7 @@ def get_tasks():
 # this is to show error in valid formats
 @app.errorhandler(404)
 def not_found(error):
-    return make_response(jsonify({'error': 'Not found'}), 404)
+    return make_response(jsonify({'error': 'Invalid Request made Not found'}), 404)
 
 
 @app.route('/todo/api/v1.0/tasks/<int:task_id>', methods=['GET'])
