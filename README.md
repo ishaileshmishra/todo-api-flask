@@ -1,4 +1,4 @@
-# todo-api
+# Flask: a famous python web framework
 
 A brief introduction to the Flask todo-api
 
